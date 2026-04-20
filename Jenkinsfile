@@ -3,13 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                echo 'Fetching code from GitHub...'
-                git 'https://github.com/Falguni475/devops-project.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 echo 'Building website...'
@@ -39,4 +32,3 @@ pipeline {
 
     }
 }
-
